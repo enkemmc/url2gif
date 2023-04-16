@@ -2,11 +2,11 @@
 URL2gif is a command-line tool for converting URLs to animated GIFs.
 
 ## Installation
-To install My App, you can follow these steps:
+To install URL2gif, you can follow these steps:
 
 * Download the latest release from the URL2gif repository.
 * Extract the downloaded archive to a directory of your choice.
-* Run the install.sh script included in the extracted archive, which will copy the My App executable to /usr/local/bin and set up tab completion for the url2gif command.
+* Run the install.sh script included in the extracted archive, which will copy the URL2gif executable to /usr/local/bin and set up tab completion for the url2gif command.
 
 
 # Requirements
