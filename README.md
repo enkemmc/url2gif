@@ -10,11 +10,10 @@ To install My App, you can follow these steps:
 
 
 # Requirements
-You must have chromedriver running on port 9515.  You can download the latest version of chromedriver from [their website](https://chromedriver.chromium.org/downloads).  Make sure it is compatible with your version of chrome.
-
+You must have [chromedriver](https://chromedriver.chromium.org/downloads) installed and running on port 9515 (9515 is the default port for chromedriver).  Make sure you install a version that is compatible with your version of Chrome.
 
 # Usage
-To use My App, you can run the url2gif command from your terminal, followed by a URL and some optional arguments.
+To use URL2gif, you can run the url2gif command from your terminal, followed by a URL and some optional arguments.
 
 ```
 url2gif https://www.earthcam.com/cams/newyork/timessquare/ --headless --frames=60
