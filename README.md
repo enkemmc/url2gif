@@ -5,9 +5,8 @@ URL2gif is a command-line tool for converting URLs to animated GIFs.
 To install URL2gif, you can follow these steps:
 
 * Download the latest release from the URL2gif repository.
-* Extract the downloaded archive to a directory of your choice.
-* Run the install.sh script included in the extracted archive, which will copy the URL2gif executable to /usr/local/bin and set up tab completion for the url2gif command.
-
+* Copy the binary to a folder on your path
+    * ``` sudo mv url2gif /usr/bin/url2gif && chmod +x /usr/bin/url2gif ```
 
 # Requirements
 You must have [chromedriver](https://chromedriver.chromium.org/downloads) installed and running on port 9515.  Make sure you install a version that is compatible with your version of Chrome.
