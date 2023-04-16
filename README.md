@@ -17,7 +17,7 @@ You must have chromedriver running on port 9515.  You can download the latest ve
 To use My App, you can run the url2gif command from your terminal, followed by a URL and some optional arguments.
 
 ```
-url2gif https://sdzsafaripark.org/cams/elephant-cam --headless --frames=60
+url2gif https://www.earthcam.com/cams/newyork/timessquare/ --headless --frames=20
 ```
 
 The above will create a 60 frame gif.
