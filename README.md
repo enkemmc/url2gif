@@ -16,7 +16,7 @@ You must have [chromedriver](https://chromedriver.chromium.org/downloads) instal
 To use URL2gif, you can run the url2gif command from your terminal, followed by a URL and some optional arguments.
 
 ```
-url2gif https://www.earthcam.com/cams/newyork/timessquare/ --headless --frames=60
+url2gif https://www.earthcam.com/cams/newyork/timessquare/ --headless --frames=60 --output=ny_gif.gif
 ```
 
 The above will create a 60 frame gif.
