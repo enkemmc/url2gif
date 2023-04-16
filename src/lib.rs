@@ -35,6 +35,7 @@ impl Settings {
             } else if arg.contains("--output") {
                 let s = arg.split('=');
                 output_filename = s.last().unwrap().to_string();
+                println!("output filename: {}", output_filename);
             } else {
                 panic!("unknown argument: {}", arg);
             }

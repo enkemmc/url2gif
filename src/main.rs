@@ -1,6 +1,7 @@
 use std::error::Error;
 use std::fmt::{Display, Formatter, Result as FmtResult};
 use std::fs::File;
+use std::io::{Write, stdout};
 
 use gif::EncodingError as GifEncodingError;
 use image::ImageError;
@@ -17,7 +18,7 @@ async fn main() -> Result<(), MyError> {
     if settings.headless {
         caps.set_headless().unwrap();
     }
-    let driver = WebDriver::new("http://localhost:9515", caps).await.unwrap();
+    let driver = WebDriver::new("http://localhost:9515", caps).await.expect("Failed to start WebDriver session");
     println!("got driver");
 
     // Load the website and wait for it to load
@@ -34,8 +35,12 @@ async fn main() -> Result<(), MyError> {
     // Create GIF encoder
     let mut gif_encoder = gif::Encoder::new(File::create("website.gif").unwrap(), width, height, &[])?;
 
+    let mut stdout = stdout();
+
     // Capture screenshots at regular intervals and add them to the GIF
     for _i in 0..settings.count {
+        print!("\rProcessing frame {}/{}", _i + 1, settings.count);
+        stdout.flush().unwrap();
         let screenshot_data = driver.screenshot_as_png().await?;
         image::load_from_memory_with_format(&screenshot_data, image::ImageFormat::Png)?;
         let screenshot_image = image::load_from_memory(&screenshot_data)?;
