@@ -10,7 +10,7 @@ To install My App, you can follow these steps:
 
 
 # Requirements
-You must have [chromedriver](https://chromedriver.chromium.org/downloads) installed and running on port 9515 (9515 is the default port for chromedriver).  Make sure you install a version that is compatible with your version of Chrome.
+You must have [chromedriver](https://chromedriver.chromium.org/downloads) installed and running on port 9515.  Make sure you install a version that is compatible with your version of Chrome.
 
 # Usage
 To use URL2gif, you can run the url2gif command from your terminal, followed by a URL and some optional arguments.
