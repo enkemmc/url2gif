@@ -33,7 +33,7 @@ async fn main() -> Result<(), MyError> {
     println!("width {} height {}", width, height);
 
     // Create GIF encoder
-    let mut gif_encoder = gif::Encoder::new(File::create("website.gif").unwrap(), width, height, &[])?;
+    let mut gif_encoder = gif::Encoder::new(File::create(settings.output_filename).unwrap(), width, height, &[])?;
 
     let mut stdout = stdout();
 
